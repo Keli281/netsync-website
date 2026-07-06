@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Our Portfolio - Netsync Limited</title>
+    <meta name="description" content="Explore our portfolio of completed projects across Security, Energy, Civil Works, Office Solutions, and General Supplies." />
+    <meta name="keywords" content="Netsync portfolio, projects, security systems, energy solutions, civil works, office solutions, Kenya" />
+    <meta name="author" content="Netsync Limited" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Portfolio - Netsync Limited" />
+    <meta property="og:description" content="Explore our portfolio of completed projects across Security, Energy, Civil Works, Office Solutions, and General Supplies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://netsync-ltd.vercel.app/portfolio.html" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header id="navbar" role="navigation" aria-label="Main navigation">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="Netsync Limited Home">
+                    <span class="logo-text">NETSYNC</span>
+                    <span class="logo-sub">Limited</span>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="index.html#about" role="menuitem">About</a></li>
+                <li role="none"><a href="index.html#departments" role="menuitem">Departments</a></li>
+                <li role="none"><a href="portfolio.html" role="menuitem" class="active">Portfolio</a></li>
+                <li role="none"><a href="index.html#clients" role="menuitem">Clients</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem" class="nav-cta">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== PORTFOLIO HERO ===== -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-tag">Our Work</span>
+                <h1>Portfolio</h1>
+                <div class="section-divider"></div>
+                <p class="page-hero-subtitle">
+                    Explore our completed projects and see how we've delivered excellence 
+                    across all our departments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO FILTER ===== -->
+    <section class="portfolio-filter-section">
+        <div class="container">
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">All Projects</button>
+                <button class="filter-tab" data-filter="security">Security & Safety</button>
+                <button class="filter-tab" data-filter="energy">Energy</button>
+                <button class="filter-tab" data-filter="civil">Civil & Wood</button>
+                <button class="filter-tab" data-filter="office">Office Solutions</button>
+                <button class="filter-tab" data-filter="supplies">General Supplies</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO GRID ===== -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Project 1: Security -->
+                <div class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0f1f3a, #1a2d4a);">
+                            <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>CCTV Installation</h3>
+                            <p>Commercial building surveillance system with 24/7 monitoring.</p>
+                            <span class="portfolio-tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Security -->
+                <div class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0f1f3a, #2a1a4a);">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Access Control System</h3>
+                            <p>Biometric access control for a corporate office building.</p>
+                            <span class="portfolio-tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Security -->
+                <div class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a2a3a, #0f1f3a);">
+                            <i class="fas fa-fence" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Electric Fence System</h3>
+                            <p>Perimeter security for a residential estate in Nairobi.</p>
+                            <span class="portfolio-tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Energy -->
+                <div class="portfolio-item" data-category="energy">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a3a2a, #0f2a1a);">
+                            <i class="fas fa-solar-panel" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Solar Power Installation</h3>
+                            <p>50kW solar system for a commercial facility in Industrial Area.</p>
+                            <span class="portfolio-tag">Energy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Energy -->
+                <div class="portfolio-item" data-category="energy">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a2a3a, #0a1a2a);">
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Electrical Wiring & Fittings</h3>
+                            <p>Complete electrical installation for a new office block.</p>
+                            <span class="portfolio-tag">Energy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Energy -->
+                <div class="portfolio-item" data-category="energy">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0a2a3a, #1a3a4a);">
+                            <i class="fas fa-fan" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Air Conditioning Systems</h3>
+                            <p>HVAC installation for a medical facility in Westlands.</p>
+                            <span class="portfolio-tag">Energy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Civil -->
+                <div class="portfolio-item" data-category="civil">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2a1a0a, #3a2a1a);">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Office Partitioning</h3>
+                            <p>Modern glass partitioning for a tech company in Upper Hill.</p>
+                            <span class="portfolio-tag">Civil & Wood</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Civil -->
+                <div class="portfolio-item" data-category="civil">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2a1a1a, #3a2a2a);">
+                            <i class="fas fa-paint-roller" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Surface Painting</h3>
+                            <p>Interior and exterior painting for a luxury apartment complex.</p>
+                            <span class="portfolio-tag">Civil & Wood</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Civil -->
+                <div class="portfolio-item" data-category="civil">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a2a1a, #2a3a2a);">
+                            <i class="fas fa-cabinet-filing" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Custom Cabinets & Shelves</h3>
+                            <p>Designer cabinets for a corporate executive office.</p>
+                            <span class="portfolio-tag">Civil & Wood</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Office -->
+                <div class="portfolio-item" data-category="office">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a1a3a, #2a2a4a);">
+                            <i class="fas fa-pen-ruler" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Branding & Design</h3>
+                            <p>Complete brand identity for a new startup in Nairobi.</p>
+                            <span class="portfolio-tag">Office Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 11: Office -->
+                <div class="portfolio-item" data-category="office">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2a1a3a, #3a2a4a);">
+                            <i class="fas fa-print" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Printing Solutions</h3>
+                            <p>Large format printing for a retail chain's marketing campaign.</p>
+                            <span class="portfolio-tag">Office Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 12: Office -->
+                <div class="portfolio-item" data-category="office">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0a1a3a, #1a2a4a);">
+                            <i class="fas fa-server" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Server & Hardware Supply</h3>
+                            <p>Complete IT infrastructure for a financial institution.</p>
+                            <span class="portfolio-tag">Office Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 13: Supplies -->
+                <div class="portfolio-item" data-category="supplies">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a2a2a, #2a3a3a);">
+                            <i class="fas fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Procurement Services</h3>
+                            <p>Sourcing and supply of quality equipment for a construction firm.</p>
+                            <span class="portfolio-tag">General Supplies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 14: Supplies -->
+                <div class="portfolio-item" data-category="supplies">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2a1a0a, #3a2a1a);">
+                            <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Quality Verification</h3>
+                            <p>Quality assurance and verification services for imported goods.</p>
+                            <span class="portfolio-tag">General Supplies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's bring your vision to life. Contact us today for a free consultation.</p>
+                <a href="index.html#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>NETSYNC <span>Limited</span></h3>
+                    <p>
+                        Bridging the gap between individuals, companies, and organizations 
+                        with quality, timely, and cost-effective products and services.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#departments">Departments</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#clients">Our Clients</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-departments">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><a href="index.html#departments">Security &amp; Safety</a></li>
+                        <li><a href="index.html#departments">Energy</a></li>
+                        <li><a href="index.html#departments">Civil &amp; Wood</a></li>
+                        <li><a href="index.html#departments">Office Solutions</a></li>
+                        <li><a href="index.html#departments">General Supplies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kalsi House, 4th Flr, Luthuli Ave, Nairobi</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> +254 (0) 723 359 082</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> netsynclimited@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Netsync Limited. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://wa.me/254723359082?text=Hi%20Netsync%2C%20I'd%20like%20to%20inquire%20about%20your%20services." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- ===== TOAST NOTIFICATION ===== -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+        </div>
+        <div class="toast-content">
+            <h4>Success!</h4>
+            <p id="toastMessage">Your message has been sent.</p>
+        </div>
+        <button class="toast-close" aria-label="Close notification">&times;</button>
+    </div>
+
+    <!-- ===== EXTERNAL JAVASCRIPT ===== -->
+    <script src="js/script.js"></script>
+</body>
+</html>

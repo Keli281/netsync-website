@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Netsync Limited - Bridging Gaps, Delivering Excellence</title>
+    <meta name="description" content="Netsync Limited provides quality, timely and cost-effective security, energy, civil works, office solutions and general supplies in Kenya." />
+    <meta name="keywords" content="Netsync, security systems, energy solutions, civil works, office solutions, general supplies, Kenya" />
+    <meta name="author" content="Netsync Limited" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Netsync Limited - Bridging Gaps, Delivering Excellence" />
+    <meta property="og:description" content="Quality, timely and cost-effective products and services for individuals, companies and organizations." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://netsync-ltd.vercel.app" />
+    <meta property="og:image" content="https://netsync-ltd.vercel.app/assets/images/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header id="navbar" role="navigation" aria-label="Main navigation">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="Netsync Limited Home">
+                    <span class="logo-text">NETSYNC</span>
+                    <span class="logo-sub">Limited</span>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="index.html#about" role="menuitem">About</a></li>
+                <li role="none"><a href="index.html#departments" role="menuitem">Departments</a></li>
+                <li role="none"><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="index.html#clients" role="menuitem">Clients</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem" class="nav-cta">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section" style="background: linear-gradient(135deg, rgba(10, 22, 40, 0.88) 0%, rgba(10, 22, 40, 0.75) 100%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&auto=format') center/cover no-repeat fixed;">
+        <div class="hero-overlay"></div>
+        <div class="hero-binary-bg" aria-hidden="true"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge" style="background: rgba(0, 168, 204, 0.15); border-color: rgba(0, 168, 204, 0.25); color: #00D4FF;">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+                Founded April 2023
+            </div>
+            <h1 class="hero-title" style="color: #FFFFFF;">
+                <span class="hero-highlight" style="color: #FFFFFF;">Bridging Gaps,</span><br />
+                <span id="typed-text" class="typed-text" style="color: #00D4FF; border-right-color: #00D4FF;"></span>
+            </h1>
+            <p class="hero-subtitle" style="color: rgba(255, 255, 255, 0.8);">
+                Quality, timely and cost-effective products and services for individuals, 
+                companies and organizations across the globe.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" style="background: linear-gradient(135deg, #00D4FF, #0088A8); color: #FFFFFF; box-shadow: 0 4px 25px rgba(0, 212, 255, 0.4);">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    Get a Quote
+                </a>
+                <a href="portfolio.html" class="btn btn-secondary" style="border-color: rgba(255, 255, 255, 0.3); color: #FFFFFF;">
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    Explore Services
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator" aria-hidden="true" style="color: rgba(255, 255, 255, 0.5);">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Who We Are</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Founded in <strong>April 2023</strong>, Netsync Limited was born from a vision to bridge 
+                        the gap between individuals, companies, and organizations on one side, and quality 
+                        goods, services, and equipment on the other.
+                    </p>
+                    <p>
+                        We actively bridge this gap by offering <strong>quality, timely, and cost-effective</strong> 
+                        products and services, ensuring our clients get exactly what they need, when they need it.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2023">0</span>
+                            <span class="stat-label">Founded</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Departments</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="11">0</span>
+                            <span class="stat-label">Trusted Clients</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-values">
+                    <div class="value-card" data-delay="0">
+                        <div class="value-icon">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <h3>Vision</h3>
+                        <p>To be a lasting bridge between people and quality, affordable services and equipment in the global market.</p>
+                    </div>
+                    <div class="value-card" data-delay="100">
+                        <div class="value-icon">
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
+                        </div>
+                        <h3>Mission</h3>
+                        <p>To continuously and actively deliver on our promise.</p>
+                    </div>
+                    <div class="value-card" data-delay="200">
+                        <div class="value-icon">
+                            <i class="fas fa-gem" aria-hidden="true"></i>
+                        </div>
+                        <h3>Core Values</h3>
+                        <p>Management quality · Openness · Action-oriented · Continuous improvement and renewal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTMENTS SECTION ===== -->
+    <section id="departments" class="departments-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Departments</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    We deliver excellence across five specialized departments, each staffed with experienced professionals.
+                </p>
+            </div>
+            
+            <div class="departments-grid">
+                <!-- Department 1: Security & Safety -->
+                <div class="dept-card" data-department="security">
+                    <div class="dept-card-bg"></div>
+                    <div class="dept-card-overlay">
+                        <div class="dept-icon">
+                            <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h3>Security &amp; Safety</h3>
+                        <p>Leveraging technology for your protection.</p>
+                        <ul class="dept-services">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Intruder Alarm Systems</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Access Control Systems</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> CCTV Systems</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Electric Fence Systems</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Automatic Gates</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Fire Detection Systems</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Intercom Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Department 2: Energy -->
+                <div class="dept-card" data-department="energy">
+                    <div class="dept-card-bg"></div>
+                    <div class="dept-card-overlay">
+                        <div class="dept-icon">
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Energy</h3>
+                        <p>Quality, safe, and affordable energy solutions.</p>
+                        <ul class="dept-services">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Electrical Piping &amp; Wiring</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Electrical Fittings &amp; Testing</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Power Backup Systems</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Solar Energy Solutions</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Air Conditioning</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Department 3: Civil & Wood -->
+                <div class="dept-card" data-department="civil">
+                    <div class="dept-card-bg"></div>
+                    <div class="dept-card-overlay">
+                        <div class="dept-icon">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                        </div>
+                        <h3>Civil &amp; Wood</h3>
+                        <p>Quality finishes for your living and working spaces.</p>
+                        <ul class="dept-services">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Office Partitioning &amp; Fittings</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cabinet &amp; Shelves</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Roofing &amp; Ceiling Fittings</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Floor &amp; Wall Tiling</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Surface Painting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Department 4: Office Solutions -->
+                <div class="dept-card" data-department="office">
+                    <div class="dept-card-bg"></div>
+                    <div class="dept-card-overlay">
+                        <div class="dept-icon">
+                            <i class="fas fa-pen-ruler" aria-hidden="true"></i>
+                        </div>
+                        <h3>Office Solutions</h3>
+                        <p class="dept-tagline">"The Netsync Think Tank"</p>
+                        <p>Where ideas are born and brought to life.</p>
+                        <ul class="dept-services">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Graphic Design</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Branding</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Printing Solutions</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Computer Hardware &amp; Software</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Servers &amp; Accessories</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Stationary &amp; Consumables</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Department 5: General Supplies -->
+                <div class="dept-card" data-department="supplies">
+                    <div class="dept-card-bg"></div>
+                    <div class="dept-card-overlay">
+                        <div class="dept-icon">
+                            <i class="fas fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <h3>General Supplies</h3>
+                        <p>Tailor-made solutions for your official and unofficial needs.</p>
+                        <ul class="dept-services">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Procurement Services</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Quality Verification</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Origin &amp; Warranty Checks</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Sourcing &amp; Logistics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLIENTS SECTION ===== -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trusted By</span>
+                <h2 class="section-title">Our Clients</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    We are proud to serve these esteemed organizations.
+                </p>
+            </div>
+            
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <span>Conservation International</span>
+                </div>
+                <div class="client-logo">
+                    <span>Viva Healthcare Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Rapid Kate Services Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>AMS Properties Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Royal Converters Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Hasbah Kenya Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Towfiq Kenya Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Viva Tools Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Viva Global Limited</span>
+                </div>
+                <div class="client-logo">
+                    <span>Apple Eye Construction Co. Ltd</span>
+                </div>
+                <div class="client-logo">
+                    <span>Zenko Kenya Limited</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Request a Quote</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Let's discuss how we can serve you. Fill in the form below or reach out directly.
+                </p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Kalsi House, 4th Floor<br />Luthuli Avenue, Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+254723359082">+254 (0) 723 359 082</a></p>
+                            <p><a href="tel:+254752819333">+254 (0) 752 819 333</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:netsynclimited@gmail.com">netsynclimited@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon–Fri: 8:00 AM – 5:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-credentials">
+                        <div class="cred-badge">
+                            <i class="fas fa-file-certificate" aria-hidden="true"></i>
+                            <span>Incorporated 10 Apr 2023</span>
+                        </div>
+                        <div class="cred-badge">
+                            <i class="fas fa-receipt" aria-hidden="true"></i>
+                            <span>KRA PIN: P052209407A</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                            <span class="error-message" data-for="name">Please enter your name</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                                <span class="error-message" data-for="email">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                            <span class="error-message" data-for="message">Please enter a message</span>
+                        </div>
+                        
+                        <div class="form-group form-quote-toggle">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="requestQuote" />
+                                <span class="checkmark"></span>
+                                <span>I'd like to request a formal quote</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>NETSYNC <span>Limited</span></h3>
+                    <p>
+                        Bridging the gap between individuals, companies, and organizations 
+                        with quality, timely, and cost-effective products and services.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#departments">Departments</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#clients">Our Clients</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-departments">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><a href="index.html#departments">Security &amp; Safety</a></li>
+                        <li><a href="index.html#departments">Energy</a></li>
+                        <li><a href="index.html#departments">Civil &amp; Wood</a></li>
+                        <li><a href="index.html#departments">Office Solutions</a></li>
+                        <li><a href="index.html#departments">General Supplies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kalsi House, 4th Flr, Luthuli Ave, Nairobi</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> +254 (0) 723 359 082</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> netsynclimited@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Netsync Limited. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://wa.me/254723359082?text=Hi%20Netsync%2C%20I'd%20like%20to%20inquire%20about%20your%20services." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- ===== TOAST NOTIFICATION ===== -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+        </div>
+        <div class="toast-content">
+            <h4>Success!</h4>
+            <p id="toastMessage">Your message has been sent.</p>
+        </div>
+        <button class="toast-close" aria-label="Close notification">&times;</button>
+    </div>
+
+    <!-- ===== EXTERNAL JAVASCRIPT ===== -->
+    <script src="js/script.js"></script>
+</body>
+</html>
